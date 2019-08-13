@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1200px;
+    font-family: "Playfair display";
+}
+header{
+    width: 100%;
+}
+.top__menu{
+    text-align: center;
+}
+.top__menu li{
+    display: inline-block;
+    width: 12.6%;
+    line-height: 95px;
+}
+.top__menu li a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+} 
+.top__menu li a:hover{
+    color: #03a9f4;
+}
+.top__menu li a,
+h1,
+section span{
+    color: #626262;
+}
+section{
+    text-align: center;
+    padding: 60px 0;
+}
+.box-left,
+.box-right{
+    display: inline-block;
+    width: 420px;
+    text-align: justify;
+}
+.box-left{
+    padding: 0 29px 0 149px;
+}
+.box-right{
+    padding: 0 149px 0 29px;
+}
+img{
+    display: block;
+}
+p{
+    padding-top: 31px;
+    /* height: 71px;
+    line-height: 71px; */
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #b4ad9e;
+    font-family: "Ubuntu light"
+}
+h1{
+    padding-top: 23px;
+    font-size: 30px;
+}
+section span{
+    display: block;
+    padding-top: 23px;
+    font-size: 14px;
+    line-height: 24px;
+}
+form{
+    text-align: center;
+}
+button{
+    height: 60px;
+    width: 164px;
+    border-width: 1px;
+    border-color: rgb(98, 98, 98);
+    border-style: solid;
+    background-color: transparent;
+    font-size: 20px;
+}
+    
+   
+  
