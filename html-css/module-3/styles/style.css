@@ -52,7 +52,7 @@ body {
 }
 
 .top__menu li a,
-h1,
+h2,
 section span {
     color: #626262;
 }
@@ -60,20 +60,21 @@ section span {
 /*Main content__________*/
 section {
     text-align: center;
-    margin-bottom: 135px;
-}
-
-.last-section {
     margin-bottom: 50px;
 }
 
-.box {
+.article {
     display: inline-block;
     width: 421px;
     text-align: justify;
+    margin-bottom: 135px;
 }
 
-.box-left {
+section .article:nth-child(n + 5) {
+    margin-bottom: 0px;
+}
+
+section .article:nth-child(odd) {
     margin-right: 61px;
 }
 
@@ -83,7 +84,7 @@ img {
     height: auto;
 }
 
-.img-box {
+.article-img {
     margin-bottom: 31px;
 }
 
@@ -96,7 +97,7 @@ p {
     font-family: "Ubuntu light";
 }
 
-h1 {
+h2 {
     margin-bottom: 35px;
     font-size: 30px;
     line-height: 36px;
