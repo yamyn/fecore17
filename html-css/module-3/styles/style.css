@@ -67,8 +67,7 @@ section {
     margin-bottom: 50px;
 }
 
-.box-left,
-.box-right {
+.box {
     display: inline-block;
     width: 421px;
     text-align: justify;
