@@ -53,7 +53,7 @@ body {
 
 .top__menu li a,
 h2,
-section span {
+.article p:last-child {
     color: #626262;
 }
 
@@ -88,7 +88,7 @@ img {
     margin-bottom: 31px;
 }
 
-p {
+.article p:first-child {/* Не применяеться стиль, не могу разобраться*/
     margin-bottom: 33px;
     text-transform: uppercase;
     font-size: 14px;
@@ -104,8 +104,7 @@ h2 {
     font-weight: normal;
 }
 
-section span {
-    display: block;
+.article p:last-child {
     font-size: 14px;
     line-height: 24px;
 }
