@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: "Playfair display";
+    font-family: "Playfair display", "Times New Roman", serif;
     font-size: 0;
     line-height: 16.8px;
 }
@@ -53,7 +53,8 @@ body {
 
 .top__menu li a,
 h2,
-article p:last-child {
+article p:last-child,
+button {
     color: #626262;
 }
 
@@ -74,7 +75,7 @@ section article:nth-child(n + 5) {
     margin-bottom: 0px;
 }
 
-section article:nth-child(odd) {
+section article:nth-child(even) {
     margin-right: 61px;
 }
 
