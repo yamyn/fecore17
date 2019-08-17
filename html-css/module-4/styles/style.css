@@ -1,0 +1,124 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto Black", "Times New Roman", serif;
+    font-size: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header_______*/
+
+nav {
+    padding: 36px 0 100px;
+}
+
+.site-logo{
+    float: left;
+    display: block;
+    font-family: "Roboto Light";
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+}
+
+.site-logo,
+.menu-item a,
+h2 {
+    text-transform: uppercase;
+}
+
+.site-logo::first-letter {
+    font-family: "Roboto Black";
+}
+
+.top-menu {
+    width: 466px;
+    padding: 0;
+    margin-top: 10px;
+    padding-left: 30px;
+    float: right;
+}
+
+.menu-item {
+    float: left;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 22px;
+}
+
+.menu-item a {
+    display: block;
+    font-family: "Open Sans Bold";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 11px;
+    color: #0f0101;
+}
+
+.site-logo::first-letter,
+.menu-item a:hover,
+.menu-item a:focus {
+    color: #1abc9c;
+}
+
+/*Gallery_________*/
+section {
+    text-align: center;
+}
+
+h2 {
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 32px;
+    color: #515151;
+}
+
+.product-cart {
+    width: 255px;
+    height: 322px;
+    background-color: #e9f0fd;
+}
