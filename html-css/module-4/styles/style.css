@@ -19,6 +19,14 @@ img {
     height: auto;
 }
 
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
 .clearfix::after {
     display: table;
     content: '';
@@ -76,7 +84,6 @@ h2 {
 
 .top-menu {
     width: 466px;
-    padding: 0;
     margin-top: 10px;
     padding-left: 30px;
     float: right;
@@ -108,6 +115,11 @@ h2 {
 /*Gallery_________*/
 section {
     text-align: center;
+    margin-bottom: 36px;
+}
+
+section:first-child {
+    margin-bottom: 105px;
 }
 
 h2 {
@@ -120,5 +132,64 @@ h2 {
 .product-cart {
     width: 255px;
     height: 322px;
+    float: left;
     background-color: #e9f0fd;
+}
+
+.product-cart:not(:nth-child(4n + 4)) {
+    margin-right: 30px;
+}
+
+.product-cart:nth-child(-n + 4) {
+    margin-bottom: 30px;
+}
+
+/*BLog_________*/
+.box {
+    width: 350px;
+    /* height: 540px; */
+    float: left;
+}
+
+.box:not(:last-child) {
+    margin-right: 30px;
+}
+
+.box img {
+    margin-bottom: 14px;
+}
+
+.box h3,
+.box p,
+.box button {
+    color: #555252;
+    text-align: left;
+    line-height: 26px;
+}
+
+.box h3{
+    margin:0 0 22px;
+    font-family: "Open Sans Semibold";
+    font-size: 18px;
+    
+}
+
+.box p{
+    margin: 0 0 13px;
+    font-family: "Open Sans Regular";
+    font-size: 14px;
+}
+
+.box button {
+    width: 160px;
+    height: 51px;
+    padding: 0;
+    margin-bottom: 46px;
+    border: 0px;
+    border-radius: 5px;
+    font-family: "Open Sans Light";
+    font-size: 16px;
+    background-color: #4ec6ab;
+    color: #fff;
+    text-align: center;
 }
