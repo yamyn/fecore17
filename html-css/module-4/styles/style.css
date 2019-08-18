@@ -260,6 +260,15 @@ h2::after {
     
 }
 
+.box h3::after {
+    display: block;
+    content: "";
+    margin-top: 11px;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+}
+
 .box p{
     margin: 0 0 13px;
     font-family: "Open Sans Regular";
