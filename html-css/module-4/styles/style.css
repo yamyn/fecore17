@@ -267,10 +267,11 @@ h2::after {
 }
 
 .box button {
+    display: block;
     width: 160px;
     height: 51px;
     padding: 0;
-    margin-bottom: 46px;
+    margin-bottom: 0 auto 46px;
     border: 0px;
     border-radius: 5px;
     font-family: "Open Sans Light";
