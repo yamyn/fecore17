@@ -60,7 +60,8 @@ a{
 /*header_______*/
 
 nav {
-    padding: 36px 0 100px;
+    padding: 36px 0 0;
+    margin-bottom: 95px;
 }
 
 .site-logo{
@@ -123,10 +124,20 @@ section:first-child {
 }
 
 h2 {
-    margin: 0 auto;
+    margin: 0 auto 76px;
     font-size: 48px;
     line-height: 32px;
     color: #515151;
+}
+
+h2::after {
+    display: block;
+    content: "";
+    margin: 27px auto 0;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+
 }
 
 .product-cart {
