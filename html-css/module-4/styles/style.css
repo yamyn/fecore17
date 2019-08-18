@@ -134,6 +134,12 @@ h2 {
     height: 322px;
     float: left;
     background-color: #e9f0fd;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-cart:last-child {
+    background-image: url(../img/product/product8.png);
 }
 
 .product-cart:not(:nth-child(4n + 4)) {
