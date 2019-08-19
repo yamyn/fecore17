@@ -10,7 +10,6 @@ html {
 
 body {
     font-family: "Roboto Black", "Times New Roman", serif;
-    font-size: 0;
 }
 
 img {
@@ -59,9 +58,12 @@ a{
 
 /*header_______*/
 
+header {
+    padding-bottom: 95px;
+}
+
 nav {
     padding: 36px 0 0;
-    margin-bottom: 95px;
 }
 
 .site-logo{
@@ -84,9 +86,8 @@ h2 {
 }
 
 .top-menu {
-    width: 466px;
+    min-width: 432px;
     margin-top: 10px;
-    padding-left: 30px;
     float: right;
 }
 
@@ -116,11 +117,11 @@ h2 {
 /*Gallery_________*/
 section {
     text-align: center;
-    margin-bottom: 36px;
+    padding-bottom: 36px;
 }
 
 section:first-child {
-    margin-bottom: 105px;
+    padding-bottom: 105px;
 }
 
 h2 {
@@ -155,13 +156,19 @@ h2::after {
     margin-bottom: 30px;
 }
 
-.product-cart::before {
+.product-cart a {
+    display: block;
+}
+
+/* .product-cart:not(:first-child)::before {
     content: "";
     display: block;
     height: 282px;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
 
 .heel::before {
     background-image: url('../img/product/product1.png');
@@ -193,7 +200,7 @@ h2::after {
 
 .glasses::before {
     background-image: url('../img/product/product8.png');
-}
+} */
 
 .product-cart p {
     margin: 0;
@@ -231,9 +238,14 @@ h2::after {
 }
 
 /*BLog_________*/
+
+.blog {
+    margin: 0;
+}
+
 .box {
     width: 350px;
-    /* height: 540px; */
+    height: 540px;
     float: left;
 }
 
@@ -247,7 +259,7 @@ h2::after {
 
 .box h3,
 .box p,
-.box button {
+.box a {
     color: #555252;
     text-align: left;
     line-height: 26px;
@@ -275,17 +287,20 @@ h2::after {
     font-size: 14px;
 }
 
-.box button {
+.box a {
     display: block;
     width: 160px;
     height: 51px;
-    padding: 0;
-    margin-bottom: 0 auto 46px;
+    padding-top: 13px;
     border: 0px;
     border-radius: 5px;
     font-family: "Open Sans Light";
     font-size: 16px;
-    background-color: #4ec6ab;
+    background-color: black;
     color: #fff;
     text-align: center;
+}
+
+.box a:hover {
+    background-color: #4ec6ab;
 }
