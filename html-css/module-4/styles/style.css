@@ -160,48 +160,6 @@ h2::after {
     display: block;
 }
 
-/* .product-cart:not(:first-child)::before {
-    content: "";
-    display: block;
-    height: 282px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-.heel::before {
-    background-image: url('../img/product/product1.png');
-}
-
-.belt::before {
-    background-image: url('../img/product/product2.png');
-}
-
-.hat::before {
-    background-image: url('../img/product/product3.png');
-}
-
-.sac::before {
-    background-image: url('../img/product/product4.png');
-}
-
-.bag::before {
-    background-image: url('../img/product/product5.png');
-}
-
-.strap::before {
-    background-image: url('../img/product/product6.png');
-}
-
-.shoes::before {
-    background-image: url('../img/product/product7.png');
-}
-
-.glasses::before {
-    background-image: url('../img/product/product8.png');
-} */
-
 .product-cart p {
     margin: 0;
     height: 40px;

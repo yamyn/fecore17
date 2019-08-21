@@ -113,3 +113,106 @@ h2 {
 .menu-item a:focus {
     color: #1abc9c;
 }
+
+/*Gallery_________*/
+
+main {
+    background-color: #e9f0fd;
+}
+
+section {
+    text-align: center;
+    padding-bottom: 98px;
+}
+
+h2 {
+    margin: 0 auto 76px;
+    font-size: 48px;
+    line-height: 32px;
+    color: #515151;
+}
+
+h2::after {
+    display: block;
+    content: "";
+    margin: 27px auto 0;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab;
+
+}
+
+.product-cart {
+    width: 255px;
+    height: 322px;
+    float: left;
+}
+
+.product-cart:not(:nth-child(4n + 4)) {
+    margin-right: 30px;
+}
+
+.product-cart:nth-child(-n + 4) {
+    margin-bottom: 30px;
+}
+
+.product-cart a {
+    display: block;
+}
+
+.product-cart p {
+    margin: 0;
+    height: 40px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 5px 0 0 12px;
+}
+
+.product-cart p:first-child {
+    float: left;
+    width: 201px;
+    background-color: #323232;
+}
+
+.product-cart p:last-child {
+    float: right;
+    width: 54px;
+    background-color: #8c8c8c;
+}
+
+.product-cart p:last-child::before {
+    content: "$";
+}
+
+.product-cart:hover p:first-child {
+    background-color: #1abc9c;
+}
+
+.product-cart:hover p:last-child {
+    background-color: #7fd9c7;
+}
+
+/*Footer_________*/
+footer {
+    height: 88px;
+    background-color: #323232;
+    font-family: 'Open Sans Regular';
+    font-size: 16px;
+    line-height: 28px;
+    color: #fefefe;
+    text-align: center;
+}
+
+.copyright {
+    padding-top: 33px;
+}
+
+
+address {
+    display: inline;
+    font-style: normal;
+    color: #46bfa9;
+}
