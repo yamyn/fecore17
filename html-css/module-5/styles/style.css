@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto Black", "Times New Roman", serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header_______*/
+
+header {
+    padding-bottom: 95px;
+}
+
+nav {
+    padding: 36px 0 0;
+}
+
+.site-logo{
+    float: left;
+    display: block;
+    font-family: "Roboto Light";
+    font-size: 30px;
+    line-height: 32px;
+    color: #555252;
+}
+
+.site-logo,
+.menu-item a,
+h2 {
+    text-transform: uppercase;
+}
+
+.site-logo::first-letter {
+    font-family: "Roboto Black";
+}
+
+.top-menu {
+    min-width: 432px;
+    margin-top: 10px;
+    float: right;
+}
+
+.menu-item {
+    float: left;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 22px;
+}
+
+.menu-item a {
+    display: block;
+    font-family: "Open Sans Bold";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 11px;
+    color: #0f0101;
+}
+
+.site-logo::first-letter,
+.menu-item a:hover,
+.menu-item a:focus {
+    color: #1abc9c;
+}
