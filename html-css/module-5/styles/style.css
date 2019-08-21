@@ -114,7 +114,7 @@ h2 {
     color: #1abc9c;
 }
 
-/*Gallery_________*/
+/*Colection_________*/
 
 main {
     background-color: #e9f0fd;
@@ -159,6 +159,99 @@ h2::after {
 .product-cart a {
     display: block;
 }
+
+/*Hover under image________*/
+
+.img-active {
+    position: relative;
+}
+
+.buy-area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #0f0101;
+    border: 10px solid #fff
+}
+
+.buy-area, 
+.icon-area {
+    opacity: 0;
+}
+
+.product-cart:hover .buy-area {
+    opacity: 0.55;
+}
+
+.product-cart:hover .icon-area {
+    opacity: 1;
+}
+
+.icon-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 166px;
+    height: 107px;
+    margin: 0 auto;
+}
+
+.icon-area button {
+    display: block;
+    position: absolute;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    border: 1px solid #fff;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.icon-area .icon {
+    width: 50px;
+    background-color: transparent;
+}
+
+.icon-area .two {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-area .three {
+    right: 0;
+}
+
+.icon-area .icon:hover {
+    border: 0;
+    background-color: #1abc9c;
+}
+
+.icon-area .cart {
+    bottom: 0;
+    width: 166px;
+    background-color: #323232;
+    color: #fff;
+}
+
+.icon-area button img {
+    height: 50px;
+    margin: 0 auto;
+}
+
+.cart-image {
+    width: 50px;
+    float: left;
+}
+
+.icon-area .cart span {
+    font-family: 'Open Sans Regular';
+    font-size: 14px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+/*Price and Name product*/
 
 .product-cart p {
     margin: 0;
@@ -209,7 +302,6 @@ footer {
 .copyright {
     padding-top: 33px;
 }
-
 
 address {
     display: inline;
