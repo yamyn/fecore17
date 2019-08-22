@@ -114,6 +114,36 @@ h2 {
     color: #1abc9c;
 }
 
+/*Slider__________*/
+.slider {
+    width: 1600px;
+    height: 600px;
+    position: relative;
+    border: 1px solid #0f0101;
+    margin: 0 auto;
+}
+
+.slider-ctrl {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    border: 0px;
+    padding: 0;
+    background-color: #1abc9c;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider .prev {
+    left: 245px;
+}
+
+.slider .next {
+    right: 245px;
+}
+
+
+
 /*Colection_________*/
 
 main {
