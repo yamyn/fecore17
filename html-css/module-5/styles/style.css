@@ -281,12 +281,12 @@ h2::after {
 .icon-area .icon {
     width: 50px;
     background-color: transparent;
+    background-position: center;
 }
 
 .icon-area .icon,
-.icon-area .cart-image {
+.icon-area .cart {
     background-size: 37px;
-    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -313,20 +313,15 @@ h2::after {
 .icon-area .cart {
     bottom: 0;
     width: 166px;
+    padding-left: 35px;
     background-color: #323232;
     color: #fff;
-}
-
-/* .icon-area button img {
-    height: 50px;
-    margin: 0 auto;
-} */
-
-.cart-image {
-    width: 50px;
-    height: 50px;
-    float: left;
     background-image: url(../img/icon/cart.svg);
+    background-position: 5% 50%;
+    font-family: 'Open Sans Regular';
+    font-size: 14px;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 .icon-area .cart span {
