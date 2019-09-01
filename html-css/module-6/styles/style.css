@@ -384,13 +384,13 @@ footer form {
     display: inline-flex;
 }
 
-footer input[type="text"],
+footer input[type="email"],
 footer button[type="submit"] {
     padding: 0;
     border: 0;
 }
 
-footer input[type="text"] {
+footer input[type="email"] {
     width: 230px;
     height: 40px;
     box-shadow: 0 0 0 1px #e7e7e7;
