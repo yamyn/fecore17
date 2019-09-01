@@ -213,7 +213,7 @@ section h2::after {
 /*Team section______*/
 section:last-child {
     padding-bottom: 82px;
-    box-shadow: 0 1px 0 0 #999;
+    box-shadow: 0 1px 0 0 #e7e7e7;
 }
 
 section:last-child h2 {
@@ -380,6 +380,10 @@ footer address {
     color: #f38181;
 }
 
+footer form {
+    display: inline-flex;
+}
+
 footer input[type="text"],
 footer input[type="submit"] {
     padding: 0;
@@ -389,14 +393,14 @@ footer input[type="submit"] {
 footer input[type="text"] {
     width: 230px;
     height: 40px;
-    box-shadow: 0 0 0 1px #999;
+    box-shadow: 0 0 0 1px #e7e7e7;
 }
 
 footer input[type="submit"] {
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
-    /* box-shadow: 0 0 0 1px #95e1d3; */
+    box-shadow: 0 0 0 1px #95e1d3;
     color: #fff;
     cursor: pointer;
 }
