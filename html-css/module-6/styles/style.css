@@ -404,3 +404,7 @@ footer input[type="submit"] {
     color: #fff;
     cursor: pointer;
 }
+
+.clos {
+    display: flex;
+}
