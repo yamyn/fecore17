@@ -385,7 +385,7 @@ footer form {
 }
 
 footer input[type="text"],
-footer input[type="submit"] {
+footer button[type="submit"] {
     padding: 0;
     border: 0;
 }
@@ -396,7 +396,7 @@ footer input[type="text"] {
     box-shadow: 0 0 0 1px #e7e7e7;
 }
 
-footer input[type="submit"] {
+footer button[type="submit"] {
     width: 150px;
     height: 40px;
     background-color: #95e1d3;
