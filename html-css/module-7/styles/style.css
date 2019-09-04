@@ -181,16 +181,40 @@ section h2 + p,
 
 .services {
     display: flex;
+    margin-bottom: 117px;
     justify-content: space-between;
 }
 
 .services li {
+    position: relative;
     flex-basis: 290px;
-    padding-top: 125px;
-    background-image: url(../img/icons/basket.svg);
+}
+
+.services li::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 3px solid #fed136;
     background-repeat: no-repeat;
-    background-position-x: center;
-    
+    background-position: center;
+}
+
+.services .commerce::before {
+    background-image: url(../img/icons/basket.svg);
+}
+
+.services .responsive::before {
+    background-image: url(../img/icons/laptop.svg);
+}
+
+.services .security::before {
+    background-image: url(../img/icons/lock.svg);
 }
 
 .services h3, 
@@ -199,6 +223,7 @@ section h2 + p,
 }
 
 .services h3 {
+    padding-top: 125px;
     margin-bottom: 14px;
     font-size: 18px;
     line-height: 22px;
@@ -209,4 +234,21 @@ section h2 + p,
     font-family: 'Roboto Slab';
     font-size: 14px;
     line-height: 26px;
+}
+
+/*Form section____________*/
+.form-section {
+    padding-top: 93px;
+    background-color: #222;
+    background-image: url(../img/map-image.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.form-section h2 {
+    color: #fff;
+}
+
+.form-section form input {
+    width: 455px;
 }
