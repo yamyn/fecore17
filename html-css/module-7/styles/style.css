@@ -64,7 +64,33 @@ html {
          url('../fonts/roboto-slab-v9-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/roboto-slab-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-
+  /* crete-round-regular - latin */
+  @font-face {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Crete Round'), local('CreteRound-Regular'),
+         url('../fonts/crete-round-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/crete-round-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* crete-round-italic - latin */
+  @font-face {
+    font-family: 'Crete Round';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Crete Round Italic'), local('CreteRound-Italic'),
+         url('../fonts/crete-round-v8-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/crete-round-v8-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* mr-dafoe-regular - latin */
+  @font-face {
+    font-family: 'Mr Dafoe';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Mr Dafoe Regular'), local('MrDafoe-Regular'),
+         url('../fonts/mr-dafoe-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mr-dafoe-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 body {
     font-family: 'Montserrat', 'Times New Roman', sans-serif;
 }
@@ -122,7 +148,7 @@ header nav {
 }
 
 .site-logo {
-    font-family: inherit; /*Wisdom script___________*/
+    font-family: 'Mr Dafoe';
     font-size: 26px;
     line-height: 41px;
 }
@@ -168,7 +194,7 @@ section h2 {
 
 section h2 + p {
     margin: 0 0 51px;
-    font-family: inherit;/*DroidSerif__*/
+    font-family: 'Crete Round';
     font-size: 16px;
     line-height: 19px;
     font-style: italic;
@@ -308,4 +334,12 @@ section h2 + p,
     font-size: 14px;
     color: #bbb;
     font-weight: bold;
+}
+
+.control:required:valid {
+    outline: 2px solid #47c547b7;
+}
+
+.control:required:invalid {
+    outline: 1px solid #f32222bb;
 }
