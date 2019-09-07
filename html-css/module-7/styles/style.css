@@ -160,6 +160,7 @@ header nav {
 }
 
 .menu-item a {
+    display: block;
     font-size: 14px;
     line-height: 41px;
     font-weight: bold;
@@ -185,6 +186,10 @@ section {
     text-align: center;
 }
 
+.services-section {
+    padding-bottom: 117px;
+}
+
 section h2 {
     margin: 0 0 5px;
     font-size: 40px;
@@ -193,7 +198,7 @@ section h2 {
 }
 
 section h2 + p {
-    margin: 0 0 51px;
+    margin: 0 0 78px;
     font-family: 'Crete Round';
     font-size: 16px;
     line-height: 19px;
@@ -207,22 +212,17 @@ section h2 + p,
 
 .services {
     display: flex;
-    margin-bottom: 117px;
     justify-content: space-between;
 }
 
 .services li {
-    position: relative;
     flex-basis: 290px;
 }
 
 .services li::before {
     display: block;
-    position: absolute;
     content: "";
-    top: 27px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto 18px;
     width: 74px;
     height: 74px;
     border-radius: 50%;
@@ -249,7 +249,6 @@ section h2 + p,
 }
 
 .services h3 {
-    padding-top: 125px;
     margin-bottom: 14px;
     font-size: 18px;
     line-height: 22px;
@@ -276,7 +275,7 @@ section h2 + p,
     color: #fff;
 }
 
-.form-section form {
+.form-wrap {
     padding-bottom: 115px;
 }
 
@@ -327,7 +326,12 @@ section h2 + p,
     font-size: 18px;
     color: #fff;
     background-color: #fed136;
+    transition: background-color 200ms linear;
+}
 
+.control--button:hover, 
+.control--button:focus {
+    background-color: #c3d08b;
 }
 
 .control::placeholder {
