@@ -10,6 +10,27 @@
 </head>
 <body>
     <h1 class="visually-hidden">Share your holiday dreams</h1>
-    
+    <div class="img-wrapper container">
+        <picture>
+            <source media="(max-width: 767px)" srcset="./img/banner/mobile-baner.jpg">
+            <source media="(min-width: 768px)" srcset="./img/banner/mobile-baner.jpg">
+            <source media="(min-width: 1440px)" srcset="./img/banner/mobile-baner.jpg">
+            <img src="./img/banner/mobile-baner.jpg" alt="banner image" width="320" height="540">
+        </picture>
+        <div class="banner-wrap">
+            <header>
+                <div class="registration">
+                    <a href="#">Log in</a>
+                    <a href="#">Sign up</a>
+                </div>
+                <a href="#" class="site-logo" title="This is site logotype">URLAUBSGLÜCK</a>
+            </header>
+            <div class="banner-info">
+                <p class="main-info">Share your holiday dreams</p>
+                <p class="other-info">And find the perfect partner to fullfill it</p>
+                <button type="submit">Find your holiday partner</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

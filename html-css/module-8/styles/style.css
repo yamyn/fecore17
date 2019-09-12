@@ -46,8 +46,14 @@ html {
          url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-  body {
+body {
     font-family: 'Montserrat', 'Times New Roman', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 ul {
@@ -57,6 +63,11 @@ ul {
 
 li {
     list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -78,3 +89,21 @@ input[type="radio"].visually-hidden {
     width: 320px;
     margin: 0 auto;
 }
+
+/*Header_______*/
+
+picture {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-wrapper {
+    height: 540px;
+    position: relative;
+}
+
+.banner-wrap {
+    position: absolute;
+}
+
