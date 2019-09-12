@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    background-color: yellow;
+}
+
+header,
+footer {
+    height: 20vh;
+    text-align: center;
+    line-height: 70px;
+    border: 3px solid black;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    text-align: center;
+    line-height: 400px;
+}
+
+.main, 
+.read-more, 
+aside {
+    border: 3px solid black;
+}
+
+.main {
+    width: calc(520/960 * 100%);
+    background-color: blue;
+}
+
+.read-more, 
+aside {
+    width: calc(200/960 * 100%);
+}
+
+.read-more {
+    background-color: gray;
+}
+
+aside {
+    background-color: red;
+}
+
+footer {
+    background-color: green;
+}
