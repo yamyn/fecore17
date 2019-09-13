@@ -8,6 +8,7 @@
                 <li>  <a href="html-css/module-5/index.html">homme work 5</a></li>
                 <li>  <a href="html-css/module-6/index.html">homme work 6</a></li>
                 <li>  <a href="html-css/module-7/index.html">homme work 7</a></li>
+                <li>  <a href="html-css/module-8/index.html">homme work 8</a></li>
             </ol>
         </li>
         <li>
