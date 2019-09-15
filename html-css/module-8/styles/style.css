@@ -185,6 +185,8 @@ header {
     border: 0;
     background-color: #ff4e50;
     border-radius: 27px;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 /*Section__________*/
@@ -200,12 +202,8 @@ header {
     line-height: 26px;
 }
 
-.holiday-partner ul {
-    margin-bottom: 28px;
-}
-
-.candidate {
-    padding: 0 64px;
+.holiday-partner > ul {
+    margin: 0 auto 28px;
 }
 
 .candidate figure {
@@ -279,6 +277,7 @@ header {
     display: block;
     height: 40px;
     width: 280px;
+    padding: 0;
     margin: 0 auto;
     border: 2px solid #ff4e50;
     border-radius: 27px;
@@ -296,12 +295,93 @@ header {
 }
 
 @media (min-width: 480px) {
+    .container {
+        width: 478px;
+    }
+
     .img-wrapper {
         background-image: url(../img/banner/480-mobile-baner.png);
         background-color: black;
     }
-    .container {
-        width: 478px;
-    } 
 }
 
+@media (min-width: 768px) {
+
+    .container {
+        width: 768px;
+    }
+
+    /*Header______*/
+    .img-wrapper {
+        height: 700px;
+        background-image: url(../img/banner/tablet-baner.png);
+        background-color: black;
+    }
+
+    header {
+        display: flex;
+        padding: 0 50px;
+        margin-bottom: 107px;
+        height: 115px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .site-logo {
+        margin: 0;
+    }
+
+    .banner-info {
+        width: 530px;
+        margin: 0 auto;
+    }
+
+    .main-info {
+        font-size: 52px;
+        line-height: 62px;
+        margin: 0 0 40px;
+    }
+
+    .other-info {
+        padding: 0;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 36px;
+    }
+
+    .banner-info button {
+        width: 225px;
+    }
+
+    /*Section________*/
+    .holiday-partner {
+        padding-bottom: 40px;
+    }
+
+    .holiday-partner > h2 {
+        margin-bottom: 36px;
+    }
+
+    .holiday-partner > ul {
+        display: flex;
+        margin-bottom: 38px;
+        width: 492px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .candidate {
+        width: 236px;
+    }
+    
+    .holiday-partner > button {
+        width: 192px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+    .candidate:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 60px;
+    }
+}
