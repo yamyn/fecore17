@@ -303,6 +303,7 @@ header {
     }
 
     .img-wrapper {
+        width: 478px;
         background-image: url(../img/banner/480-mobile-baner.png);
         background-color: black;
     }
