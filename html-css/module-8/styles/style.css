@@ -100,6 +100,7 @@ input[type="radio"].visually-hidden {
 
 .img-wrapper {
     /* padding: 0 10px; */
+    width: 320px;
     height: 540px;
     position: relative;
     text-align: center;
@@ -176,7 +177,7 @@ header {
     margin-top: 0;
 }
 
-.banner-info button {
+.banner-info > button {
     display: block;
     margin: 0 auto;
     padding: 0;
@@ -187,6 +188,7 @@ header {
     border-radius: 27px;
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
 }
 
 /*Section__________*/
@@ -286,6 +288,7 @@ header {
     font-size: 14px;
     line-height: 17px;
     color: #ff4e50;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -308,11 +311,12 @@ header {
 @media (min-width: 768px) {
 
     .container {
-        width: 768px;
+        width: 748px;
     }
 
     /*Header______*/
     .img-wrapper {
+        width: 768px;
         height: 700px;
         background-image: url(../img/banner/tablet-baner.png);
         background-color: black;
@@ -320,7 +324,7 @@ header {
 
     header {
         display: flex;
-        padding: 0 50px;
+        padding: 0 30px;
         margin-bottom: 107px;
         height: 115px;
         flex-direction: row-reverse;
@@ -383,5 +387,39 @@ header {
 @media (min-width: 768px) and (max-width: 1439px) {
     .candidate:not(:nth-last-child(-n + 2)) {
         margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 940px;
+    }
+    
+    .img-wrapper {
+        width: 1440px;
+        height: 700px;
+        margin: 0 auto;
+        background-image: url(../img/banner/desktop-baner.png);
+        background-color: black;
+    }
+
+    .main-info {
+        margin-bottom: 43px;
+    }
+
+    .other-info {
+        margin-bottom: 38px;
+    }
+
+    .holiday-partner {
+        padding-bottom: 72px;
+    }
+
+    .holiday-partner > ul {
+        width: auto;
+    }
+
+    .candidate {
+        width: 222px;
     }
 }
