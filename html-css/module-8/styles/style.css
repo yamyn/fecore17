@@ -91,16 +91,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*Header_______*/
-
-/* picture {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-} */
-
 .img-wrapper {
-    /* padding: 0 10px; */
-    width: 320px;
     height: 540px;
     margin: 0 auto;
     position: relative;
@@ -119,14 +110,11 @@ header {
 .autorization li {
     display: inline-block;
     height: 36px;
+    width: 90px;
 }
 
 .log-in {
     margin-right: 18px;
-}
-
-.sign-up {
-    width: 90px;
 }
 
 .autorization button {
@@ -140,11 +128,13 @@ header {
     font-size: 14px;
     line-height: 17px;
     color: #fff;
+    border-radius: 27px;
+    transition: border 200ms linear;
 }
 
-.sign-up button{
+.autorization button:hover, 
+.autorization button:focus {
     border: 2px solid #fff;
-    border-radius: 27px;
 }
 
 .autorization button, 
@@ -190,6 +180,13 @@ header {
     font-size: 14px;
     line-height: 16px;
     cursor: pointer;
+    transition: background-color 300ms linear;
+}
+
+.banner-info > button:hover, 
+.banner-info > button:focus {
+    background-color: rgba(224, 206, 206, 0.7);
+    color: #ff4e50;
 }
 
 /*Section__________*/
@@ -205,21 +202,13 @@ header {
     line-height: 26px;
 }
 
-.holiday-partner > ul {
+.holiday-partner > .container > ul {
     margin: 0 auto 28px;
-}
-
-.candidate figure {
-    margin: 0;
-}
-
-.img-link {
-    margin-bottom: 16px;
 }
 
 .img-link .img-wrap {
     width: 122px;
-    margin: 0 auto;
+    margin: 0 auto 16px;
     position: relative;
 }
 
@@ -258,19 +247,20 @@ header {
     background-color: #4e73db;
 }
 
-.candidate .name a{
+.candidate .name {
     font-weight: 700;
     color: #333;
-    margin-bottom: 19px;
+    margin: 0 0 19px;
 }
 
-.candidate .name a, 
-.candidate .candidate-info a {
+.candidate .name , 
+.candidate .candidate-info {
     font-size: 14px;
     line-height: 17px;
 }
 
-.candidate .candidate-info a {
+.candidate .candidate-info {
+    margin: 0;
     font-family: 'Roboto';
     font-weight: 300;
     color: #666;
@@ -290,6 +280,20 @@ header {
     line-height: 17px;
     color: #ff4e50;
     cursor: pointer;
+    transition: background-color 300ms linear;
+}
+
+.holiday-partner button:hover, 
+.holiday-partner button:focus {
+    background-color: #ff4e50;
+    color: #fff;
+}
+
+@media (min-width: 321px) {
+    .img-wrapper {
+        background-image: url(../img/banner/480-mobile-baner.png);
+        background-color: black;
+    }
 }
 
 @media (max-width: 767px) {
@@ -304,8 +308,7 @@ header {
     }
 
     .img-wrapper {
-        width: 478px;
-        background-image: url(../img/banner/480-mobile-baner.png);
+        background-image: url(../img/banner/tablet-baner.png);
         background-color: black;
     }
 }
@@ -318,17 +321,21 @@ header {
 
     /*Header______*/
     .img-wrapper {
-        width: 768px;
         height: 700px;
-        background-image: url(../img/banner/tablet-baner.png);
+        background-image: url(../img/banner/tablet-baner_1.png);
         background-color: black;
     }
 
     header {
+        margin-bottom: 107px;
+        padding: 0;
+        height: 115px;
+    }
+
+    header > nav {
         display: flex;
         padding: 0 30px;
-        margin-bottom: 107px;
-        height: 115px;
+        height: 100%;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
@@ -365,13 +372,13 @@ header {
         padding-bottom: 40px;
     }
 
-    .holiday-partner > h2 {
+    .holiday-partner > .container > h2 {
         margin-bottom: 36px;
     }
 
-    .holiday-partner > ul {
+    .holiday-partner > .container > ul {
         display: flex;
-        margin-bottom: 38px;
+        margin: 0 auto 38px;
         width: 492px;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -381,24 +388,23 @@ header {
         width: 236px;
     }
     
-    .holiday-partner > button {
+    .holiday-partner > .container > button {
         width: 192px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 959px) {
     .candidate:not(:nth-last-child(-n + 2)) {
         margin-bottom: 60px;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 960px) {
     .container {
         width: 940px;
     }
     
     .img-wrapper {
-        width: 1440px;
         height: 700px;
         background-image: url(../img/banner/desktop-baner.png);
         background-color: black;
@@ -416,16 +422,14 @@ header {
         padding-bottom: 72px;
     }
 
-    .holiday-partner > ul {
+    .holiday-partner > .container > ul {
         width: auto;
     }
 
     .candidate {
         width: 222px;
     }
-}
 
-@media (min-width: 1440px) {
     .candidate:not(:nth-last-child(-n + 4)) {
         margin-bottom: 60px;
     }
