@@ -423,3 +423,9 @@ header {
         width: 222px;
     }
 }
+
+@media (min-width: 1440px) {
+    .candidate:not(:nth-last-child(-n + 4)) {
+        margin-bottom: 60px;
+    }
+}
