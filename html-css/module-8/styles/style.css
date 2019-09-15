@@ -106,7 +106,7 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/banner/mobile-baner.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 header {
@@ -295,7 +295,7 @@ header {
     }
 }
 
-/* @media (min-width: 321px) and (max-width: 767px) {
+@media (min-width: 321px) and (max-width: 767px) {
     .img-wrapper {
         background-image: url(../img/banner/480-mobile-baner.png);
         background-color: black;
@@ -303,4 +303,4 @@ header {
     .container {
         width: 480px;
     } 
-} */
+}
