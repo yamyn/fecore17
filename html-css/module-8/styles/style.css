@@ -295,12 +295,12 @@ header {
     }
 }
 
-@media (min-width: 321px) and (max-width: 767px) {
+/* @media (min-width: 321px) and (max-width: 767px) {
     .img-wrapper {
         background-image: url(../img/banner/480-mobile-baner.png);
         background-color: black;
     }
     .container {
-        width: 100vh;
+        width: 480px;
     } 
-}
+} */
