@@ -284,7 +284,7 @@ header {
 }
 
 @media (max-width: 767px) {
-    .partners > .row > .col-12:not(:last-child) {
+    .mb-custom:not(:last-child) {
         margin-bottom: 30px;
     }
 }
@@ -359,7 +359,7 @@ header {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .partners > .row > .col-12:not(:nth-last-child(-n + 2)) {
+    .mb-custom:not(:nth-last-child(-n + 2)) {
         margin-bottom: 60px;
     }
 }
@@ -382,7 +382,7 @@ header {
         padding-bottom: 72px;
     }
 
-    .partners > .row > .col-12:not(:nth-last-child(-n + 4)) {
+    .mb-custom:not(:nth-last-child(-n + 4)) {
         margin-bottom: 60px;
     }
 }
