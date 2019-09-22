@@ -283,6 +283,12 @@ header {
     }
 }
 
+@media (max-width: 575px) {
+    .holiday-partner {
+        width: 90%;
+    }
+}
+
 @media (max-width: 767px) {
     .mb-custom:not(:last-child) {
         margin-bottom: 30px;
