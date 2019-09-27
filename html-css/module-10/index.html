@@ -20,22 +20,23 @@
                             <a href="#" class="link site-logo" title="This is site logotype">MoGo</a>
                         </div>
                         <div class="col-12">
-                            <ul class="list site-navigation">
-                                    <li class="item site-navigation__item"><a href="#" class="link site-navigation__link">about</a></li>
-                                    <li class="item site-navigation__item"><a href="#" class="link site-navigation__link">service</a></li>
-                                    <li class="item site-navigation__item"><a href="#" class="link site-navigation__link">work</a></li>
-                                    <li class="item site-navigation__item"><a href="#" class="link site-navigation__link">blog</a></li>
-                                    <li class="item site-navigation__item"><a href="#" class="link site-navigation__link">contact</a></li>
-                                    <li class="item site-navigation__item site-navigation__item--cart-pg"><a href="#" class="link site-navigation__link site-navigation__link--small">
+                            <ul class="row list site-navigation" id="siteNav">
+                                    <li class="col-12 item site-navigation__item"><a href="#" class="link site-navigation__link">about</a></li>
+                                    <li class="col-12 item site-navigation__item"><a href="#" class="link site-navigation__link">service</a></li>
+                                    <li class="col-12 item site-navigation__item"><a href="#" class="link site-navigation__link">work</a></li>
+                                    <li class="col-12 item site-navigation__item"><a href="#" class="link site-navigation__link">blog</a></li>
+                                    <li class="col-12 item site-navigation__item"><a href="#" class="link site-navigation__link">contact</a></li>
+                                    <li class="col-6 item site-navigation__item site-navigation__item--cart-pg"><a href="#" class="link site-navigation__link site-navigation__link--small">
                                         <svg class="site-navigation__icon">
                                             <use href="./img/icon/sprite.svg#cart"></use>
                                         </svg>
                                     </a></li>
-                                    <li class="item site-navigation__item site-navigation__item--cart-pg"><a href="#" class="link site-navigation__link site-navigation__link--small">
+                                    <li class="col-6 item site-navigation__item site-navigation__item--cart-pg"><a href="#" class="link site-navigation__link site-navigation__link--small">
                                         <svg class="site-navigation__icon">
                                             <use href="./img/icon/sprite.svg#search"></use>
                                         </svg>
                                     </a></li>
+                                    <li class="col-12 item site-navigation__item site-navigation__item--burger"><a href="#" class="link site-navigation__link site-navigation__link--burger" id="menu">&#9776;</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -43,5 +44,6 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/menu-burger.js"></script>
 </body>
 </html>
