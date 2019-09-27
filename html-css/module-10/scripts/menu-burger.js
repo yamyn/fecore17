@@ -1,4 +1,4 @@
-menu.onclick = function myFunction(argument) {
+menuBurger.onclick = function myFunction(argument) {
 	var x =document.getElementById('siteNav');
 
 	if (x.className === "row list site-navigation") {

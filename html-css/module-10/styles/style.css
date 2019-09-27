@@ -100,6 +100,12 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
 }
 
+.button {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
 /*Header_______*/
 .banner-wrap {
     height: 540px;
@@ -110,7 +116,10 @@ input[type="radio"].visually-hidden {
     url(../img/banner/background-image_mobile_320.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
+}
+
+.page-nav {
+    position: relative;
 }
 
 .site-logo {
@@ -124,16 +133,19 @@ input[type="radio"].visually-hidden {
     .site-navigation__item {
         display: none;
     }
-    .site-navigation__item--burger {
+    .menu-burger {
         display: block;
     }
 }
 
 .mobille-menu {
-    position: relative;
-    background-color: rgba(0, 0, 0, .5);
-    max-width: 280px;
-    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .mobille-menu .site-navigation__item {
@@ -142,12 +154,15 @@ input[type="radio"].visually-hidden {
 }
 
 .site-logo, 
-.site-navigation__link {
+.site-navigation__link,
+.menu-burger, 
+.banner-info__main, 
+.banner-info__templ, 
+.button__banner {
     color: #fff;
 }
 
 .site-navigation__link {
-    font-family: 'Montserrat';
     font-size: 24px;
     line-height: 29px;
     text-transform: uppercase;
@@ -166,9 +181,21 @@ input[type="radio"].visually-hidden {
     fill: #fff;
 }
 
-.site-navigation__link--burger {
-    padding: 30px 0;
+.menu-burger {
+    padding: 10px 0;
     font-size: 36px;
+}
+
+.banner-info__templ {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.banner-info__main {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
 }
 
 @media (max-width: 767px) {
@@ -178,7 +205,7 @@ input[type="radio"].visually-hidden {
 }
 
 @media (min-width: 960px) {
-    .site-navigation__item--burger {
+    .menu-burger {
         display: none;
     }
 }
