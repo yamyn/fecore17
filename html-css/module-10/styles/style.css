@@ -442,7 +442,8 @@ input[type="radio"].visually-hidden {
 .social-icons__link {
     width: 55px;
     height: 55px;
-    padding-top: 15px;
+    display: flex;
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #fce38a;
@@ -622,4 +623,15 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, .5);
             box-shadow: 0 0 0 1px rgba(0, 0, 0, .5);
     background-color: rgba(0, 0, 0, .5);
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner-wrap {
+    background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+    url(../img/banner/background-image_desktop@2x.jpg);
+    background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+    url(../img/banner/background-image_desktop@2x.jpg);
+    background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+    url(../img/banner/background-image_desktop@2x.jpg);
+    }
 }
