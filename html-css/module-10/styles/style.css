@@ -631,23 +631,37 @@ input[type="radio"].visually-hidden {
     background-color: rgba(0, 0, 0, .5);
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .banner-wrap {
-    background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
-    url(../img/banner/background-image_desktop@2x.jpg);
-    background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
-    url(../img/banner/background-image_desktop@2x.jpg);
-    background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
-    url(../img/banner/background-image_desktop@2x.jpg);
-    }
-}
-
 @media (max-width: 959px) {
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .banner-wrap {
+        margin-bottom: 35px;
+        height: 540px;
+        background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+        url(../img/banner/background-image_mobile_768@2x-min.jpg);
+        background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+        url(../img/banner/background-image_tablet-min.jpg);
+        background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+        url(../img/banner/background-image_tablet-min.jpg);
+        }
+
+    .page-header {
+        padding-bottom: 50px;
+    }
+
+
     .site-navigation__item {
         display: none;
     }
+
     .menu-burger {
         display: block;
+        order: 1;
     }
     .mobille-menu {
         position: absolute;
@@ -665,38 +679,6 @@ input[type="radio"].visually-hidden {
 
     .mobille-menu .site-navigation__item {
         display: block;
-    }
-
-    .banner-info {
-        max-width: 70%;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        max-width: 540px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-
-    .banner-wrap {
-    margin-bottom: 35px;
-    height: 540px;
-    background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
-    url(../img/banner/background-image_mobile_768-min.jpg);
-    background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
-    url(../img/banner/background-image_mobile_768-min.jpg);
-    background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
-    url(../img/banner/background-image_mobile_768-min.jpg);
-    }
-
-    .page-header {
-        padding-bottom: 50px;
-    }
-
-    .page-nav {
-        flex-flow: column wrap;
-        justify-content: center;
     }
 
     .site-logo {
@@ -730,6 +712,146 @@ input[type="radio"].visually-hidden {
         font-size: 52px;
         line-height: 61px;
     }
+
+    .banner-info {
+        max-width: 70%;
+    }
+
+    /*Services Section__________*/
+
+    .serv-list__item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .worker {
+        background-image: none;
+    }
+
+    .worker__link {
+        background-image: none;
+    }
+
+    .worker__img {
+        margin: 0 auto;
+    }
+
+    .worker__box:hover {
+        transform: none;
+    }
+
+    .social-icons {
+        top: 93%;
+    }
+
+    .social-icons__link {
+        opacity: 1;
+    }
+
+    /*Portfolio section_________*/
+    .section-title__char {
+        width: 85%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .portfolio {
+        flex-flow: column wrap;
+    }
+
+    .worker {
+        margin-left: -15px;
+        margin-right: -15px;
+        flex: 0 0 320px;
+    }
+
+    .worker__box:hover {
+        transform: none;
+    }
+
+    .social-icons {
+        top: 93%;
+    }
+
+    .social-icons__link {
+        opacity: 1;
+    }
+
+    .worker__link--name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .worker__link--profession {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .worker:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    .worker__link--name {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .worker__link--profession {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    /*Footer__________*/
+    .footer {
+        height: auto;
+        margin-bottom: 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .copyright {
+        padding-top: 10px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .footer-form
+
+    .footer-form__email {
+        width: auto;
+        flex: 0 0 70%;
+    }
+
+    .footer-form__btn {
+        width: auto;
+        flex: 0 0 27%;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .banner-wrap {
+    margin-bottom: 35px;
+    height: 540px;
+    background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+    url(../img/banner/background-image_mobile_768-min.jpg);
+    background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+    url(../img/banner/background-image_mobile_768-min.jpg);
+    background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+    url(../img/banner/background-image_mobile_768-min.jpg);
+    }
+
+    .page-nav {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
 
     .button__banner {
         width: 90%;
@@ -799,12 +921,6 @@ input[type="radio"].visually-hidden {
         margin-bottom: 40px;
     }
 
-    .section-title__char {
-        width: 85%;
-        font-size: 18px;
-        line-height: 22px;
-    }
-
     .section--team {
         padding-bottom: 40px;
     }
@@ -812,72 +928,12 @@ input[type="radio"].visually-hidden {
     .section--team .section-title__main {
         margin-bottom: 25px;
     }
+}
 
-    .portfolio {
-        flex-flow: column wrap;
+@media (min-width: 576px) {
+    .footer-form {
+        width: 505px;
     }
-
-    .worker {
-        margin-left: -15px;
-        margin-right: -15px;
-        flex: 0 0 320px;
-        background-image: -o-linear-gradient(#95e1d3 395.781px, #fff 81px);
-    background-image: linear-gradient(#95e1d3 395.781px, #fff 81px);
-    }
-
-    .worker__box:hover {
-        transform: none;
-    }
-
-    .social-icons {
-        top: 93%;
-    }
-
-    .social-icons__link {
-        opacity: 1;
-    }
-
-    .worker__link--name {
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .worker__link--profession {
-        font-size: 18px;
-        line-height: 32px;
-    }
-
-    .worker:not(:last-child) {
-        margin-bottom: 50px;
-    }
-
-    /*Footer__________*/
-    .footer {
-        height: auto;
-        margin-bottom: 30px;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .copyright {
-        padding-top: 10px;
-        margin-bottom: 25px;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .footer-form__email {
-        width: auto;
-        flex: 0 0 70%;
-    }
-
-    .footer-form__btn {
-        width: auto;
-        flex: 0 0 30%;
-    }
-
-
 }
 
 @media (max-width: 575px) {
@@ -895,4 +951,47 @@ input[type="radio"].visually-hidden {
     background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
     url(../img/banner/background-image_mobile_576-min.jpg);
     }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .banner-wrap {
+    background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+    url(../img/banner/background-image_mobile_576@2x-min.jpg);
+    background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+    url(../img/banner/background-image_mobile_576@2x-min.jpg);
+    background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+    url(../img/banner/background-image_mobile_576@2x-min.jpg);
+    }
+    @media (min-width: 576px) {
+        .banner-wrap {
+            background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+            url(../img/banner/background-image_mobile_768@2x-min.jpg);
+            background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+            url(../img/banner/background-image_mobile_768@2x-min.jpg);
+            background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+            url(../img/banner/background-image_mobile_768@2x-min.jpg);
+        }
+    }
+    @media (min-width: 768px) {
+        .banner-wrap {
+            background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+            url(../img/banner/background-image_tablet@2x-min.jpg);
+            background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+            url(../img/banner/background-image_tablet@2x-min.jpg);
+            background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+            url(../img/banner/background-image_tablet@2x-min.jpg);
+        }
+    }
+    @media (min-width: 960px) {
+        .banner-wrap {
+            background-image: -webkit-gradient( linear, left top, right top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), 
+            url(../img/banner/background-image_desktop@2x.jpg);
+            background-image: -o-linear-gradient( left, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+            url(../img/banner/background-image_desktop@2x.jpg);
+            background-image: linear-gradient( 90deg, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), 
+            url(../img/banner/background-image_desktop@2x.jpg);
+        }
+    }
+
+        
 }
