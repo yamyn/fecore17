@@ -1,4 +1,5 @@
 .serv-list {
+  @extend %list;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,6 +8,7 @@
 }
 
 .serv-list__item {
+  @extend %item;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
@@ -39,19 +41,19 @@
 }
 
 .serv-list__title {
+  @extend %prg;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 17px;
+  @include font-settings (14px, 17px);
 }
 
 .serv-list__prg {
-  font-size: 15px;
-  line-height: 24px;
+  @include font-settings (15px, 24px);
 }
 
 .serv-list__prg,
 .section-title__char {
+  @extend %prg;
   font-family: $serv-list-font;
   color: $serv-list-color;
 }

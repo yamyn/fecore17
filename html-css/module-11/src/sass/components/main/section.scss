@@ -22,21 +22,20 @@
 }
 
 .section-title__templ {
+  @extend %prg;
   margin-bottom: 20px;
   font-family: $section-tittle-font;
-  font-size: 24px;
-  line-height: 28px;
+  @include font-settings (24px, 28px);
 }
 
 .section-title__main {
+  @extend %prg;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
+  @include font-settings (30px, 36px);
   text-transform: uppercase;
   
   &::after {
-    display: block;
-    content: "";
+    @include pseudo(block, '');
     margin: 40px auto 0;
     width: 60px;
     height: 3px;
@@ -47,6 +46,5 @@
 .section-title__char {
   width: 980px;
   margin: 0 auto;
-  font-size: 12px;
-  line-height: 14px;
+  @include font-settings (12px, 14px);
 }

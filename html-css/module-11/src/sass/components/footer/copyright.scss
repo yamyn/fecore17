@@ -1,6 +1,5 @@
 .copyright {
-  font-size: 14px;
-  line-height: 17px;
+  @include font-settings (14px, 17px);
 
   &__adrs {
     display: inline;

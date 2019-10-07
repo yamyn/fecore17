@@ -1,4 +1,5 @@
 .worker {
+  @extend %item;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 380px;
   flex: 0 0 380px;
@@ -36,6 +37,7 @@
 }
 
 .worker__link {
+  @extend %link;
   margin-bottom: 29px;
   background-image: -moz-linear-gradient(90deg, $hover-text-color 0%, $main-decor-color 100%);
   background-image: -webkit-linear-gradient(90deg, $hover-text-color 0%, $main-decor-color 100%);
@@ -50,8 +52,14 @@
   margin-bottom: 10px;
 }
 
+.worker__name,
+.worker__profession {
+  @extend %prg;
+}
+
 .worker__link--name,
 .worker__link--profession {
+  @extend %link;
   -webkit-transition: color 200ms linear;
   -o-transition: color 200ms linear;
   transition: color 200ms linear;
@@ -59,11 +67,11 @@
 
 .worker__link--name {
   color: $worker-name-color;
-  font-size: 14px;
-  line-height: 17px;
+  @include font-settings(14px, 17px);
   text-transform: uppercase;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $portfolio-decor-color;
   }
 }
@@ -72,11 +80,11 @@
   font-family: $serv-list-font;
   font-weight: 100;
   font-style: italic;
-  font-size: 15px;
-  line-height: 24px;
+  @include font-settings(15px, 24px);
   color: $serv-list-color;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $portfolio-decor-color;
   }
 }

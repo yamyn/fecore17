@@ -18,13 +18,13 @@
 
   &::placeholder {
     font-family: $footer-form-font;
-    font-size: 15px;
-    line-height: 24px;
+    @include font-settings (15px, 24px);
     color: $form-plch-color;
   }
 }
 
 .footer-form__btn {
+  @extend %btn;
   width: 150px;
   height: 40px;
   background-color: $portfolio-decor-color;

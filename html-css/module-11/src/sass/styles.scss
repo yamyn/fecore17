@@ -2,6 +2,7 @@
    Import partials below
 */
 @import "./helpers/variables.scss";
+@import "./helpers/placeholders.scss";
 @import "./helpers/mixins.scss";
 @import "./normalize";
 @import "./fonts.scss";
@@ -9,10 +10,6 @@
 
 /*components*/
 @import "./components/container.scss";
-@import "./components/link.scss";
-@import "./components/button.scss";
-@import "./components/list.scss";
-@import "./components/prg.scss" ;
 
 /*HEADER________components*/
 @import "./components/header/banner-wrap.scss";

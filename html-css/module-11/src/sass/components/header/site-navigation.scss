@@ -1,4 +1,5 @@
 .site-navigation {
+  @extend %list;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,10 +9,14 @@
   justify-content: space-between;
 }
 
+.site-navigation__item {
+  @extend %item;
+}
+
 .site-navigation__link {
+  @extend %link;
   position: relative;
-  font-size: 14px;
-  line-height: 17px;
+  @include font-settings (14px, 17px);
   text-transform: uppercase;
   -webkit-transition: color 300ms linear;
   -o-transition: color 300ms linear;
@@ -45,9 +50,8 @@
 
 .site-navigation__link--big {
   &::after {
-    display: block;
+    @include pseudo (block, '');
     position: absolute;
-    content: "";
     margin: 10px auto 0;
     width: 100%;
     height: 3px;

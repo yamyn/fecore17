@@ -1,5 +1,5 @@
 .site-logo {
+  @extend %link;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
+  @include font-settings (30px, 36px);
 }
