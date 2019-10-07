@@ -1,0 +1,33 @@
+.banner-info {
+  width: 820px;
+  margin: 0 auto;
+
+  &__templ {
+    margin-bottom: 60px;
+    font-family: $section-tittle-font;
+    font-size: 72px;
+    line-height: 86px;
+  }
+
+  &__main {
+    margin-bottom: 110px;
+    font-weight: bold;
+    font-size: 150px;
+    line-height: 150px;
+  }
+}
+
+.button__banner {
+  border: 3px solid #fff;
+  height: 40px;
+  width: 160px;
+  -webkit-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+  
+  &:hover, &:focus {
+    border: 0;
+    color: $hover-text-color;
+    background-color: $banner-color;
+  }
+}

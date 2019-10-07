@@ -1,0 +1,14 @@
+{
+  "name": "saas-pract",
+  "version": "1.0.0",
+  "description": "Saas practic",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass src/scss/styles.scss -0 src/css"
+  },
+  "author": "Ya_Myn",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

@@ -1,0 +1,14 @@
+.copyright {
+  font-size: 14px;
+  line-height: 17px;
+
+  &__adrs {
+    display: inline;
+    font-style: normal;
+    color: $main-decor-color;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
