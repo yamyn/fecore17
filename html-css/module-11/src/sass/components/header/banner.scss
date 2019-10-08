@@ -1,0 +1,34 @@
+.banner-info {
+  width: 820px;
+  margin: 0 auto;
+
+  &__templ {
+    @extend %prg;
+    margin-bottom: 60px;
+    font-family: $section-tittle-font;
+    @include font-settings (72px, 86px);
+  }
+
+  &__main {
+    @extend %prg;
+    margin-bottom: 110px;
+    font-weight: bold;
+    @include font-settings (150px, 150px);
+  }
+}
+
+.button__banner {
+  @extend %btn;
+  border: 3px solid #fff;
+  height: 40px;
+  width: 160px;
+  -webkit-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+  
+  &:hover, &:focus {
+    border: 0;
+    color: $hover-text-color;
+    background-color: $banner-color;
+  }
+}

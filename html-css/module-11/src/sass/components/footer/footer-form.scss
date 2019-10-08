@@ -1,0 +1,49 @@
+.footer-form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.footer-form__email,
+.footer-form__btn {
+  padding: 0;
+  border: 0;
+}
+
+.footer-form__email {
+  width: 230px;
+  height: 40px;
+  -webkit-box-shadow: 0 0 0 1px $section-shadow-color;
+  box-shadow: 0 0 0 1px $section-shadow-color;
+
+  &::placeholder {
+    font-family: $footer-form-font;
+    @include font-settings (15px, 24px);
+    color: $form-plch-color;
+  }
+}
+
+.footer-form__btn {
+  @extend %btn;
+  width: 150px;
+  height: 40px;
+  background-color: $portfolio-decor-color;
+  -webkit-box-shadow: 0 0 0 1px $portfolio-decor-color;
+  box-shadow: 0 0 0 1px $portfolio-decor-color;
+  font-family: $main-font-stack;
+  font-weight: bold;
+  color: $main-text-color;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: $hover-text-color;
+    -webkit-box-shadow: 0 0 0 1px $form-btn-shadow-color;
+    box-shadow: 0 0 0 1px $form-btn-shadow-color;
+    background-color: $form-btn-shadow-color;
+  }
+}

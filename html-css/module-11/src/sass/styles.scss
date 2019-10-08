@@ -1,0 +1,32 @@
+/*
+   Import partials below
+*/
+@import "./helpers/variables.scss";
+@import "./helpers/placeholders.scss";
+@import "./helpers/mixins.scss";
+@import "./normalize";
+@import "./fonts.scss";
+@import "./base.scss";
+
+/*components*/
+@import "./components/container.scss";
+
+/*HEADER________components*/
+@import "./components/header/banner-wrap.scss";
+@import "./components/header/page-header.scss";
+@import "./components/header/page-nav.scss";
+@import "./components/header/site-logo.scss";
+@import "./components/header/site-navigation.scss";
+@import "./components/header/banner.scss";
+
+/*Main__________components*/
+@import "./components/main/section.scss";
+@import "./components/main/services-list.scss";
+@import "./components/main/portfolio.scss";
+@import "./components/main/worker.scss";
+@import "./components/main/social-icons.scss";
+
+/*FOOTER__________components*/
+@import "./components/footer/footer.scss";
+@import "./components/footer/copyright.scss";
+@import "./components/footer/footer-form.scss";

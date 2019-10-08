@@ -1,0 +1,5 @@
+.site-logo {
+  @extend %link;
+  font-weight: bold;
+  @include font-settings (30px, 36px);
+}
