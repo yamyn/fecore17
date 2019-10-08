@@ -10,7 +10,8 @@
                 <li>  <a href="html-css/module-7/index.html">homme work 7</a></li>
                 <li>  <a href="html-css/module-8/index.html">homme work 8</a></li>
                 <li>  <a href="html-css/module-9/index.html">homme work 9</a></li>
-                <li>  <a href="html-css/module-10/index.html">bal blasfk homme work 10</a></li>
+                <li>  <a href="html-css/module-10/index.html">homme work 10</a></li>
+                <li>  <a href="html-css/module-11/index.html">homme work 11</a></li>
             </ol>
         </li>
         <li>
