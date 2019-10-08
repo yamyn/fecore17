@@ -1,0 +1,20 @@
+.page-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.site-logo,
+.site-navigation__link,
+.banner-info__templ,
+.banner-info__main,
+.button__banner {
+  color: $main-text-color;
+}

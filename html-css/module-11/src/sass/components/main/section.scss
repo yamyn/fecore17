@@ -1,0 +1,50 @@
+.section {
+  text-align: center;
+
+  &--serv {
+    margin-bottom: 100px;
+  }
+
+  &--team {
+    padding-bottom: 82px;
+    -webkit-box-shadow: 0 1px 0 0 $section-shadow-color;
+    box-shadow: 0 1px 0 0 $section-shadow-color;
+  }
+}
+
+
+.section-title {
+  margin-bottom: 65px;
+}
+
+.section--team .section-title__main {
+  margin-bottom: 45px;
+}
+
+.section-title__templ {
+  @extend %prg;
+  margin-bottom: 20px;
+  font-family: $section-tittle-font;
+  @include font-settings (24px, 28px);
+}
+
+.section-title__main {
+  @extend %prg;
+  font-weight: bold;
+  @include font-settings (30px, 36px);
+  text-transform: uppercase;
+  
+  &::after {
+    @include pseudo(block, '');
+    margin: 40px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color: $main-decor-color;
+  }
+}
+
+.section-title__char {
+  width: 980px;
+  margin: 0 auto;
+  @include font-settings (12px, 14px);
+}
