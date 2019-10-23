@@ -12,7 +12,7 @@
                 <li>  <a href="html-css/module-9/index.html">homme work 9</a></li>
                 <li>  <a href="html-css/module-10/index.html">homme work 10</a></li>
                 <li>  <a href="html-css/module-11/build/index.html">homme work 11</a></li>
-                <li>  <a href="https://3d-y.github.io/build/index.html">final projects</a></li>
+                <li>  <a href="https://3d-y.github.io">final projects</a></li>
             </ol>
         </li>
         <li>
