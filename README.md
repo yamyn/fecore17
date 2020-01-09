@@ -15,7 +15,4 @@
                 <li>  <a href="https://3d-y.github.io">final projects</a></li>
             </ol>
         </li>
-        <li>
-            <a href="https://yamyn.github.io/goit-js-hw/">javascript</a>
-        </li>
     </ul>
