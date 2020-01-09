@@ -16,6 +16,6 @@
             </ol>
         </li>
         <li>
-            <span>javascript</span>
+            <a href="https://yamyn.github.io/goit-js-hw/">javascript</a>
         </li>
     </ul>
